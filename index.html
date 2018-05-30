@@ -6,19 +6,192 @@
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Product/Company Page Project - Michael Branscombe</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
 
     <body>
 
-        <h1>Hello World!</h1>
-        
-    </body>
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#home" class="w3-bar-item w3-button">NZXT</a>
+                <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+                <a href="#products" class="w3-bar-item w3-button w3-hide-small">Products</a>
+                <a href="#build" class="w3-bar-item w3-button w3-hide-small">Build your Own PC</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#products" class="w3-bar-item w3-button">Products</a>
+                <a href="#build" class="w3-bar-item w3-button">Build your Own PC</a>
+            </div>
+        </div>
+        <!-- top nav, mobile -->
 
-</html>
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Cases and More</span>
+            </div>
+        </div>
+
+        <!-- Container (About Section) -->
+        <div class="w3-padding-64" id="about">
+
+            <div class="w3-row w3-container">
+                <h1>About</h1>
+            </div>
+
+            <div class="w3-container">
+
+                <p style="font-size: 24px;">At NZXT, our goal is to give you the best computer parts at the best price. From cases to cooling to lighting and more, we assure you your PC will be top-of-the-line and  </p>
+
+
+            </div>
+
+            <div class="w3-card">
+            </div>
+            <!-- Second Parallax Image with Logo Text -->
+            <div class="bgimg-2 w3-display-container w3-opacity-min" id="home">
+            </div>
+
+
+            <!-- Container (Products) -->
+            <section class="w3-padding-64" id="products">
+
+                <section class="w3-row w3-container">
+                    <h1>Products</h1>
+
+                    <div class="w3-row">
+                        <div class="w3-half">
+                            <div class="w3-card">
+                                <img src="https://www.evetech.co.za/repository/ProductImages/nzxt-h700i-matte-white-mid-tower-gaming-case-1000px-v1-0008.jpg" class="w3-image" alt="H700i case">
+                            </div>
+                        </div>
+                        <div class="w3-half">
+
+                            <button onclick="accordion('cases')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                                Cases</button>
+
+                            <div id="cases" class="w3-container w3-hide">
+                                <p>Some text..</p>
+                            </div>
+
+                            <button onclick="accordion('cooling')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                                Cooling</button>
+
+                            <div id="cooling" class="w3-container w3-hide">
+                                <p>Some text..</p>
+                            </div>
+
+                            <button onclick="accordion('lighting')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                                Lighting</button>
+
+                            <div id="lighting" class="w3-container w3-hide">
+                                <p>Some text..</p>
+                            </div>
+
+                            <button onclick="accordion('partnerships')" class="w3-button w3-block w3-left-align w3-theme w3-border">
+                                Partnerships</button>
+
+                            <div id="partnerships" class="w3-container w3-hide">
+                                <p>Some text..</p>
+                            </div>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- Container (Teams Section) -->
+                <section class="w3-padding-64" id="build">
+
+                    <div class="w3-row w3-container">
+                        <h1>Build your Own PC</h1>
+                    </div>
+
+                    <div class="w3-row">
+                        <div class="w3-half">
+                            <div class="w3-card">
+                                <img src="https://i.ytimg.com/vi/hIZNKkeuS9Y/maxresdefault.jpg" class="w3-image" alt="Custom build">
+                            </div>
+                        </div>
+                        <div class="w3-half">
+
+
+                            <div class="w3-bar w3-black">
+                                <button class="w3-bar-item w3-button" onclick="openTab('Parts')">Parts</button>
+                                <button class="w3-bar-item w3-button" onclick="openTab('Temps')">Temperature Control</button>
+                                <button class="w3-bar-item w3-button" onclick="openTab('Videos')">Useful Videos</button>
+                            </div> 
+
+                            <div id="Parts" class="tab">
+                                <h2>Parts</h2>
+                                <p>Building a computer is a vigorous and sometimes dangerous process. That's why we're here to help you make sure your build runs like a dream. First, you'll need parts. The parts of a computer you will need are:</p>
+                                <ul>
+                                
+                                <li>Processor</li>
+                                <li>Hard drive</li>
+                                <li>Power supply</li>
+                                <li>Case(like the NZXT H700i)</li>
+                                <li>Motherboard(our new Z7-Z37XT board is the most powerful on the market)</li>
+                                <li>RAM, or memory</li>
+                                <li>A video card, or GPU</li>
+                                <li>A DVD drive, though this is not a requirement</li>
+                                
+                                </ul>
+                                
+                                <p>These are the components that will take your game from 60fps 720p to 144fps 1440p. Using our parts and our recommended other components your computer will be in tip top shape for years to come.</p>
+                                
+                            </div>
+
+                            <div id="Temps" class="tab" style="display:none">
+                                <h2>Paris</h2>
+                                <p>Paris is the capital of France.</p> 
+                            </div>
+
+                            <div id="Videos" class="tab" style="display:none">
+                                <h2>Useful Links to Help</h2>
+                                <iframe width="300" height="250"
+                                        src="https://www.youtube.com/embed/e5WVZ4HWPII">
+                                </iframe>
+                                <iframe width="300" height="250"
+                                        src="https://www.youtube.com/embed/5ZsZnnOX_mo">
+                                </iframe>
+                                <iframe width="600" height="400"
+                                        src="https://www.youtube.com/embed/5EfRTbezmfA">
+                                        </iframe>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </section>
+
+                <!-- Javascript -->
+
+                <script src="js/topNav.js"></script>
+                <script src="js/accordion.js"></script>
+                <script src="js/openTab.js"></script>
+
+                </body>
+
+            </html>
